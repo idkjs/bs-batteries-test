@@ -1,0 +1,24 @@
+{
+  "name": "bs-batteries-test",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "postinstall": "patch-package"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^8.4.2"
+  },
+  "dependencies": {
+    "bs-batteries": "git+https://github.com/prozacchiwawa/bs-batteries#fstar",
+    "bs-lwt": "mzp/bs-lwt",
+    "patch-package": "^6.4.1",
+    "postinstall-postinstall": "^2.1.0"
+  }
+}
