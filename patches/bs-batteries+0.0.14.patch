@@ -15,13 +15,13 @@ index 0000000..a5162fd
 +B lib/bs/src
 +####BSB GENERATED: NO EDIT}
 diff --git a/node_modules/bs-batteries/bsconfig.json b/node_modules/bs-batteries/bsconfig.json
-index 1d4a3ba..492cc42 100644
+index 1d4a3ba..9cfebb4 100644
 --- a/node_modules/bs-batteries/bsconfig.json
 +++ b/node_modules/bs-batteries/bsconfig.json
 @@ -1,5 +1,6 @@
  {
    "name": "bs-batteries",
-+  "namespace":"Batteries",
++  "namespace":true,
    "sources": [
      {
        "dir": "src",
@@ -35,8 +35,7 @@ index 0000000..d856702
 +/* This output is empty. Its source's type definitions, externals and/or unused code got optimized away. */
 diff --git a/node_modules/bs-batteries/lib/bs/.bsbuild b/node_modules/bs-batteries/lib/bs/.bsbuild
 new file mode 100644
-index 0000000..a1ae05a
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/.bsbuild differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/.bsdeps b/node_modules/bs-batteries/lib/bs/.bsdeps
 new file mode 100644
 index 0000000..608a2d4
@@ -202,23 +201,20 @@ index 0000000..7dab01e
 +1380	1432	1614596507000000000	src/batNativeInt-Batteries.cmi	cba2177fbdf0a73
 diff --git a/node_modules/bs-batteries/lib/bs/Batteries.cmi b/node_modules/bs-batteries/lib/bs/Batteries.cmi
 new file mode 100644
-index 0000000..475a959
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/Batteries.cmj b/node_modules/bs-batteries/lib/bs/Batteries.cmj
 new file mode 100644
-index 0000000..6977e97
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/Batteries.cmj differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/Batteries.cmt b/node_modules/bs-batteries/lib/bs/Batteries.cmt
 new file mode 100644
-index 0000000..9294777
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/Batteries.cmt differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/Batteries.mlmap b/node_modules/bs-batteries/lib/bs/Batteries.mlmap
 new file mode 100644
-index 0000000..8e11e90
+index 0000000..0becdb3
 --- /dev/null
 +++ b/node_modules/bs-batteries/lib/bs/Batteries.mlmap
 @@ -0,0 +1,32 @@
-+'->J˜8½û}O`·8e
++'->Jï¿½8ï¿½ï¿½}O`ï¿½8e
 +OptionExample
 +BatIO
 +BatInt
@@ -433,20 +429,16 @@ index 0000000..0d4424b
 +o Batteries.cmi : build_package Batteries.mlmap
 diff --git a/node_modules/bs-batteries/lib/bs/examples/optionExample-Batteries.cmi b/node_modules/bs-batteries/lib/bs/examples/optionExample-Batteries.cmi
 new file mode 100644
-index 0000000..1164aa7
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/examples/optionExample-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/examples/optionExample-Batteries.cmj b/node_modules/bs-batteries/lib/bs/examples/optionExample-Batteries.cmj
 new file mode 100644
-index 0000000..e0451b0
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/examples/optionExample-Batteries.cmj differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/examples/optionExample-Batteries.cmt b/node_modules/bs-batteries/lib/bs/examples/optionExample-Batteries.cmt
 new file mode 100644
-index 0000000..3c04fb9
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/examples/optionExample-Batteries.cmt differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/examples/optionExample.ast b/node_modules/bs-batteries/lib/bs/examples/optionExample.ast
 new file mode 100644
-index 0000000..29bd22f
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/examples/optionExample.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/examples/optionExample.d b/node_modules/bs-batteries/lib/bs/examples/optionExample.d
 new file mode 100644
 index 0000000..c59d054
@@ -653,16 +645,13 @@ index 0000000..79f4668
 +build install.stamp : touch optionExample-Batteries.cmi optionExample-Batteries.cmj batIO-Batteries.cmi batIO-Batteries.cmj batInt-Batteries.cmi batInt-Batteries.cmj batMap-Batteries.cmi batMap-Batteries.cmj batOrd-Batteries.cmi batOrd-Batteries.cmj batRef-Batteries.cmi batRef-Batteries.cmj batSet-Batteries.cmi batSet-Batteries.cmj option-Batteries.cmi option-Batteries.cmj batChar-Batteries.cmi batChar-Batteries.cmj batEnum-Batteries.cmi batEnum-Batteries.cmj batList-Batteries.cmi batList-Batteries.cmj batUTF8-Batteries.cmi batUTF8-Batteries.cmj batArray-Batteries.cmi batArray-Batteries.cmj batDeque-Batteries.cmi batDeque-Batteries.cmj batFloat-Batteries.cmi batFloat-Batteries.cmj batInt32-Batteries.cmi batInt32-Batteries.cmj batInt64-Batteries.cmi batInt64-Batteries.cmj batUChar-Batteries.cmi batUChar-Batteries.cmj batBuffer-Batteries.cmi batBuffer-Batteries.cmj batNumber-Batteries.cmi batNumber-Batteries.cmj batPrintf-Batteries.cmi batPrintf-Batteries.cmj batReturn-Batteries.cmi batReturn-Batteries.cmj batString-Batteries.cmi batString-Batteries.cmj batInnerIO-Batteries.cmi batInnerIO-Batteries.cmj batLazyList-Batteries.cmi batLazyList-Batteries.cmj batNativeInt-Batteries.cmi batNativeInt-Batteries.cmj batConcurrent-Batteries.cmi batConcurrent-Batteries.cmj batInterfaces-Batteries.cmi batInterfaces-Batteries.cmj batPervasives-Batteries.cmi batPervasives-Batteries.cmj batInnerWeaktbl-Batteries.cmi batInnerWeaktbl-Batteries.cmj batInnerPervasives-Batteries.cmi batInnerPervasives-Batteries.cmj Batteries.cmi Batteries.cmj
 diff --git a/node_modules/bs-batteries/lib/bs/src/batArray-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batArray-Batteries.cmi
 new file mode 100644
-index 0000000..78562dc
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batArray-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batArray-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batArray-Batteries.cmti
 new file mode 100644
-index 0000000..2cd159b
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batArray-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batArray.ast b/node_modules/bs-batteries/lib/bs/src/batArray.ast
 new file mode 100644
-index 0000000..0a09b4b
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batArray.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batArray.d b/node_modules/bs-batteries/lib/bs/src/batArray.d
 new file mode 100644
 index 0000000..3080c73
@@ -673,20 +662,16 @@ index 0000000..3080c73
 +src/batArray-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batArray.iast b/node_modules/bs-batteries/lib/bs/src/batArray.iast
 new file mode 100644
-index 0000000..efd82bb
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batArray.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batBuffer-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batBuffer-Batteries.cmi
 new file mode 100644
-index 0000000..053c14a
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batBuffer-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batBuffer-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batBuffer-Batteries.cmti
 new file mode 100644
-index 0000000..f493c97
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batBuffer-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batBuffer.ast b/node_modules/bs-batteries/lib/bs/src/batBuffer.ast
 new file mode 100644
-index 0000000..fb33f22
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batBuffer.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batBuffer.d b/node_modules/bs-batteries/lib/bs/src/batBuffer.d
 new file mode 100644
 index 0000000..b0b6301
@@ -697,20 +682,16 @@ index 0000000..b0b6301
 +src/batBuffer-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInnerIO-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batBuffer.iast b/node_modules/bs-batteries/lib/bs/src/batBuffer.iast
 new file mode 100644
-index 0000000..ef2f1a1
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batBuffer.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batChar-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batChar-Batteries.cmi
 new file mode 100644
-index 0000000..9dd47d4
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batChar-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batChar-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batChar-Batteries.cmti
 new file mode 100644
-index 0000000..5f7f8db
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batChar-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batChar.ast b/node_modules/bs-batteries/lib/bs/src/batChar.ast
 new file mode 100644
-index 0000000..cecf7bb
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batChar.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batChar.d b/node_modules/bs-batteries/lib/bs/src/batChar.d
 new file mode 100644
 index 0000000..15471fa
@@ -721,28 +702,22 @@ index 0000000..15471fa
 +src/batChar-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batOrd-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batChar.iast b/node_modules/bs-batteries/lib/bs/src/batChar.iast
 new file mode 100644
-index 0000000..09a43d4
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batChar.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmi
 new file mode 100644
-index 0000000..883cd87
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmj b/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmj
 new file mode 100644
-index 0000000..a445e75
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmj differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmt b/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmt
 new file mode 100644
-index 0000000..5952234
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmt differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmti
 new file mode 100644
-index 0000000..40fd1bf
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batConcurrent-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batConcurrent.ast b/node_modules/bs-batteries/lib/bs/src/batConcurrent.ast
 new file mode 100644
-index 0000000..f61285a
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batConcurrent.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batConcurrent.d b/node_modules/bs-batteries/lib/bs/src/batConcurrent.d
 new file mode 100644
 index 0000000..465839d
@@ -753,20 +728,16 @@ index 0000000..465839d
 +src/batConcurrent-Batteries.cmi : Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batConcurrent.iast b/node_modules/bs-batteries/lib/bs/src/batConcurrent.iast
 new file mode 100644
-index 0000000..75e2703
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batConcurrent.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batDeque-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batDeque-Batteries.cmi
 new file mode 100644
-index 0000000..a7a5d77
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batDeque-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batDeque-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batDeque-Batteries.cmti
 new file mode 100644
-index 0000000..e8502e8
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batDeque-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batDeque.ast b/node_modules/bs-batteries/lib/bs/src/batDeque.ast
 new file mode 100644
-index 0000000..84adab5
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batDeque.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batDeque.d b/node_modules/bs-batteries/lib/bs/src/batDeque.d
 new file mode 100644
 index 0000000..809ed8b
@@ -777,20 +748,16 @@ index 0000000..809ed8b
 +src/batDeque-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInterfaces-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batDeque.iast b/node_modules/bs-batteries/lib/bs/src/batDeque.iast
 new file mode 100644
-index 0000000..42ccb2e
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batDeque.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batEnum-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batEnum-Batteries.cmi
 new file mode 100644
-index 0000000..330feed
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batEnum-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batEnum-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batEnum-Batteries.cmti
 new file mode 100644
-index 0000000..c586c80
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batEnum-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batEnum.ast b/node_modules/bs-batteries/lib/bs/src/batEnum.ast
 new file mode 100644
-index 0000000..d22786b
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batEnum.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batEnum.d b/node_modules/bs-batteries/lib/bs/src/batEnum.d
 new file mode 100644
 index 0000000..036595b
@@ -801,20 +768,16 @@ index 0000000..036595b
 +src/batEnum-Batteries.cmi : Batteries.cmi src/batInnerIO-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batEnum.iast b/node_modules/bs-batteries/lib/bs/src/batEnum.iast
 new file mode 100644
-index 0000000..b46f0d0
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batEnum.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batFloat-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batFloat-Batteries.cmi
 new file mode 100644
-index 0000000..a2279c3
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batFloat-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batFloat-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batFloat-Batteries.cmti
 new file mode 100644
-index 0000000..45e2780
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batFloat-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batFloat.ast b/node_modules/bs-batteries/lib/bs/src/batFloat.ast
 new file mode 100644
-index 0000000..b4cccc1
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batFloat.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batFloat.d b/node_modules/bs-batteries/lib/bs/src/batFloat.d
 new file mode 100644
 index 0000000..83a3279
@@ -825,20 +788,16 @@ index 0000000..83a3279
 +src/batFloat-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batIO-Batteries.cmi src/batInnerIO-Batteries.cmi src/batNumber-Batteries.cmi src/batOrd-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batFloat.iast b/node_modules/bs-batteries/lib/bs/src/batFloat.iast
 new file mode 100644
-index 0000000..1a0c97c
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batFloat.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batIO-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batIO-Batteries.cmi
 new file mode 100644
-index 0000000..3f1278f
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batIO-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batIO-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batIO-Batteries.cmti
 new file mode 100644
-index 0000000..8d2adb6
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batIO-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batIO.ast b/node_modules/bs-batteries/lib/bs/src/batIO.ast
 new file mode 100644
-index 0000000..7ce3e9a
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batIO.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batIO.d b/node_modules/bs-batteries/lib/bs/src/batIO.d
 new file mode 100644
 index 0000000..f8b9bd4
@@ -849,20 +808,16 @@ index 0000000..f8b9bd4
 +src/batIO-Batteries.cmi : Batteries.cmi src/batConcurrent-Batteries.cmi src/batEnum-Batteries.cmi src/batInnerIO-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batIO.iast b/node_modules/bs-batteries/lib/bs/src/batIO.iast
 new file mode 100644
-index 0000000..7aa3191
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batIO.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerIO-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batInnerIO-Batteries.cmi
 new file mode 100644
-index 0000000..20b6ded
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerIO-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerIO-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batInnerIO-Batteries.cmti
 new file mode 100644
-index 0000000..c3b33e4
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerIO-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerIO.ast b/node_modules/bs-batteries/lib/bs/src/batInnerIO.ast
 new file mode 100644
-index 0000000..1cc6708
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerIO.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerIO.d b/node_modules/bs-batteries/lib/bs/src/batInnerIO.d
 new file mode 100644
 index 0000000..dd4030c
@@ -873,12 +828,10 @@ index 0000000..dd4030c
 +src/batInnerIO-Batteries.cmi : Batteries.cmi src/batConcurrent-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerIO.iast b/node_modules/bs-batteries/lib/bs/src/batInnerIO.iast
 new file mode 100644
-index 0000000..951a897
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerIO.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerPervasives.ast b/node_modules/bs-batteries/lib/bs/src/batInnerPervasives.ast
 new file mode 100644
-index 0000000..e34226e
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerPervasives.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerPervasives.d b/node_modules/bs-batteries/lib/bs/src/batInnerPervasives.d
 new file mode 100644
 index 0000000..64f8c5e
@@ -888,20 +841,16 @@ index 0000000..64f8c5e
 +src/batInnerPervasives-Batteries.cmj : Batteries.cmi src/option-Batteries.cmj src/option-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl-Batteries.cmi
 new file mode 100644
-index 0000000..259349c
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl-Batteries.cmt b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl-Batteries.cmt
 new file mode 100644
-index 0000000..510eb8d
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl-Batteries.cmt differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl-Batteries.cmti
 new file mode 100644
-index 0000000..a8cb2e4
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl.ast b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl.ast
 new file mode 100644
-index 0000000..cb4d43e
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl.d b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl.d
 new file mode 100644
 index 0000000..40254c4
@@ -912,20 +861,16 @@ index 0000000..40254c4
 +src/batInnerWeaktbl-Batteries.cmi : Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl.iast b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl.iast
 new file mode 100644
-index 0000000..d8e221a
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInnerWeaktbl.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batInt-Batteries.cmi
 new file mode 100644
-index 0000000..ea6b786
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batInt-Batteries.cmti
 new file mode 100644
-index 0000000..098f236
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt.ast b/node_modules/bs-batteries/lib/bs/src/batInt.ast
 new file mode 100644
-index 0000000..740e7fe
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt.d b/node_modules/bs-batteries/lib/bs/src/batInt.d
 new file mode 100644
 index 0000000..d050086
@@ -936,20 +881,16 @@ index 0000000..d050086
 +src/batInt-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInnerIO-Batteries.cmi src/batNumber-Batteries.cmi src/batOrd-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt.iast b/node_modules/bs-batteries/lib/bs/src/batInt.iast
 new file mode 100644
-index 0000000..4309e11
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt32-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batInt32-Batteries.cmi
 new file mode 100644
-index 0000000..e5a9ad2
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt32-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt32-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batInt32-Batteries.cmti
 new file mode 100644
-index 0000000..e55ac8c
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt32-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt32.ast b/node_modules/bs-batteries/lib/bs/src/batInt32.ast
 new file mode 100644
-index 0000000..3bbf902
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt32.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt32.d b/node_modules/bs-batteries/lib/bs/src/batInt32.d
 new file mode 100644
 index 0000000..a6aad7c
@@ -960,20 +901,16 @@ index 0000000..a6aad7c
 +src/batInt32-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInnerIO-Batteries.cmi src/batNumber-Batteries.cmi src/batOrd-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt32.iast b/node_modules/bs-batteries/lib/bs/src/batInt32.iast
 new file mode 100644
-index 0000000..da5d8b3
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt32.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt64-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batInt64-Batteries.cmi
 new file mode 100644
-index 0000000..79d42d4
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt64-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt64-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batInt64-Batteries.cmti
 new file mode 100644
-index 0000000..0096442
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt64-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt64.ast b/node_modules/bs-batteries/lib/bs/src/batInt64.ast
 new file mode 100644
-index 0000000..39d21ff
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt64.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt64.d b/node_modules/bs-batteries/lib/bs/src/batInt64.d
 new file mode 100644
 index 0000000..0b84d45
@@ -984,28 +921,22 @@ index 0000000..0b84d45
 +src/batInt64-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInnerIO-Batteries.cmi src/batNumber-Batteries.cmi src/batOrd-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInt64.iast b/node_modules/bs-batteries/lib/bs/src/batInt64.iast
 new file mode 100644
-index 0000000..b1d9f2a
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInt64.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmi
 new file mode 100644
-index 0000000..30373f2
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmj b/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmj
 new file mode 100644
-index 0000000..a4b0a16
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmj differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmt b/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmt
 new file mode 100644
-index 0000000..a073587
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmt differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmti
 new file mode 100644
-index 0000000..89612e3
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInterfaces-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInterfaces.ast b/node_modules/bs-batteries/lib/bs/src/batInterfaces.ast
 new file mode 100644
-index 0000000..ba8b434
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInterfaces.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInterfaces.d b/node_modules/bs-batteries/lib/bs/src/batInterfaces.d
 new file mode 100644
 index 0000000..500dd6e
@@ -1016,20 +947,16 @@ index 0000000..500dd6e
 +src/batInterfaces-Batteries.cmi : Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batInterfaces.iast b/node_modules/bs-batteries/lib/bs/src/batInterfaces.iast
 new file mode 100644
-index 0000000..e52da4f
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batInterfaces.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batLazyList-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batLazyList-Batteries.cmi
 new file mode 100644
-index 0000000..526ce70
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batLazyList-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batLazyList-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batLazyList-Batteries.cmti
 new file mode 100644
-index 0000000..fa3c6bb
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batLazyList-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batLazyList.ast b/node_modules/bs-batteries/lib/bs/src/batLazyList.ast
 new file mode 100644
-index 0000000..8e6a44b
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batLazyList.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batLazyList.d b/node_modules/bs-batteries/lib/bs/src/batLazyList.d
 new file mode 100644
 index 0000000..d2d68fb
@@ -1040,20 +967,16 @@ index 0000000..d2d68fb
 +src/batLazyList-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInterfaces-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batLazyList.iast b/node_modules/bs-batteries/lib/bs/src/batLazyList.iast
 new file mode 100644
-index 0000000..4a407f4
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batLazyList.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batList-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batList-Batteries.cmi
 new file mode 100644
-index 0000000..36fc0b9
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batList-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batList-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batList-Batteries.cmti
 new file mode 100644
-index 0000000..cdda384
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batList-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batList.ast b/node_modules/bs-batteries/lib/bs/src/batList.ast
 new file mode 100644
-index 0000000..ab0b4d9
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batList.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batList.d b/node_modules/bs-batteries/lib/bs/src/batList.d
 new file mode 100644
 index 0000000..8abed92
@@ -1064,20 +987,16 @@ index 0000000..8abed92
 +src/batList-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batList.iast b/node_modules/bs-batteries/lib/bs/src/batList.iast
 new file mode 100644
-index 0000000..08700f7
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batList.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batMap-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batMap-Batteries.cmi
 new file mode 100644
-index 0000000..2c004a8
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batMap-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batMap-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batMap-Batteries.cmti
 new file mode 100644
-index 0000000..9d66e29
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batMap-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batMap.ast b/node_modules/bs-batteries/lib/bs/src/batMap.ast
 new file mode 100644
-index 0000000..a69d250
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batMap.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batMap.d b/node_modules/bs-batteries/lib/bs/src/batMap.d
 new file mode 100644
 index 0000000..0464ab7
@@ -1088,20 +1007,16 @@ index 0000000..0464ab7
 +src/batMap-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInterfaces-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batMap.iast b/node_modules/bs-batteries/lib/bs/src/batMap.iast
 new file mode 100644
-index 0000000..e1b1a5d
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batMap.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNativeInt-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batNativeInt-Batteries.cmi
 new file mode 100644
-index 0000000..2721194
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batNativeInt-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNativeInt-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batNativeInt-Batteries.cmti
 new file mode 100644
-index 0000000..0bd518d
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batNativeInt-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNativeInt.ast b/node_modules/bs-batteries/lib/bs/src/batNativeInt.ast
 new file mode 100644
-index 0000000..54c22a2
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batNativeInt.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNativeInt.d b/node_modules/bs-batteries/lib/bs/src/batNativeInt.d
 new file mode 100644
 index 0000000..7d32b3b
@@ -1112,20 +1027,16 @@ index 0000000..7d32b3b
 +src/batNativeInt-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batIO-Batteries.cmi src/batNumber-Batteries.cmi src/batOrd-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNativeInt.iast b/node_modules/bs-batteries/lib/bs/src/batNativeInt.iast
 new file mode 100644
-index 0000000..21f2ef1
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batNativeInt.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNumber-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batNumber-Batteries.cmi
 new file mode 100644
-index 0000000..454fe77
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batNumber-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNumber-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batNumber-Batteries.cmti
 new file mode 100644
-index 0000000..93c87a9
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batNumber-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNumber.ast b/node_modules/bs-batteries/lib/bs/src/batNumber.ast
 new file mode 100644
-index 0000000..8f40092
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batNumber.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNumber.d b/node_modules/bs-batteries/lib/bs/src/batNumber.d
 new file mode 100644
 index 0000000..a9126ef
@@ -1136,28 +1047,22 @@ index 0000000..a9126ef
 +src/batNumber-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batOrd-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batNumber.iast b/node_modules/bs-batteries/lib/bs/src/batNumber.iast
 new file mode 100644
-index 0000000..a7f2e29
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batNumber.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmi
 new file mode 100644
-index 0000000..3e158f9
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmj b/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmj
 new file mode 100644
-index 0000000..648fb65
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmj differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmt b/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmt
 new file mode 100644
-index 0000000..5e1cbbc
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmt differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmti
 new file mode 100644
-index 0000000..fbd5951
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batOrd-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batOrd.ast b/node_modules/bs-batteries/lib/bs/src/batOrd.ast
 new file mode 100644
-index 0000000..60de70e
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batOrd.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batOrd.d b/node_modules/bs-batteries/lib/bs/src/batOrd.d
 new file mode 100644
 index 0000000..5e09361
@@ -1168,12 +1073,10 @@ index 0000000..5e09361
 +src/batOrd-Batteries.cmi : Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batOrd.iast b/node_modules/bs-batteries/lib/bs/src/batOrd.iast
 new file mode 100644
-index 0000000..cd459d4
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batOrd.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batPervasives.ast b/node_modules/bs-batteries/lib/bs/src/batPervasives.ast
 new file mode 100644
-index 0000000..ef2617c
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batPervasives.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batPervasives.d b/node_modules/bs-batteries/lib/bs/src/batPervasives.d
 new file mode 100644
 index 0000000..a72d59c
@@ -1184,20 +1087,16 @@ index 0000000..a72d59c
 +src/batPervasives-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInnerPervasives-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batPervasives.iast b/node_modules/bs-batteries/lib/bs/src/batPervasives.iast
 new file mode 100644
-index 0000000..7a1cec7
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batPervasives.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batPrintf-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batPrintf-Batteries.cmi
 new file mode 100644
-index 0000000..11b67fa
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batPrintf-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batPrintf-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batPrintf-Batteries.cmti
 new file mode 100644
-index 0000000..77447be
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batPrintf-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batPrintf.ast b/node_modules/bs-batteries/lib/bs/src/batPrintf.ast
 new file mode 100644
-index 0000000..802225b
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batPrintf.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batPrintf.d b/node_modules/bs-batteries/lib/bs/src/batPrintf.d
 new file mode 100644
 index 0000000..6ee5c3e
@@ -1208,24 +1107,19 @@ index 0000000..6ee5c3e
 +src/batPrintf-Batteries.cmi : Batteries.cmi src/batInnerIO-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batPrintf.iast b/node_modules/bs-batteries/lib/bs/src/batPrintf.iast
 new file mode 100644
-index 0000000..5b73735
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batPrintf.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batRef-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batRef-Batteries.cmi
 new file mode 100644
-index 0000000..6f9dcf0
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batRef-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batRef-Batteries.cmt b/node_modules/bs-batteries/lib/bs/src/batRef-Batteries.cmt
 new file mode 100644
-index 0000000..2ce4f75
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batRef-Batteries.cmt differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batRef-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batRef-Batteries.cmti
 new file mode 100644
-index 0000000..61f5b76
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batRef-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batRef.ast b/node_modules/bs-batteries/lib/bs/src/batRef.ast
 new file mode 100644
-index 0000000..71af070
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batRef.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batRef.d b/node_modules/bs-batteries/lib/bs/src/batRef.d
 new file mode 100644
 index 0000000..e9c10de
@@ -1236,28 +1130,22 @@ index 0000000..e9c10de
 +src/batRef-Batteries.cmi : Batteries.cmi src/batOrd-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batRef.iast b/node_modules/bs-batteries/lib/bs/src/batRef.iast
 new file mode 100644
-index 0000000..70ac03a
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batRef.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmi
 new file mode 100644
-index 0000000..8998356
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmj b/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmj
 new file mode 100644
-index 0000000..97176fc
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmj differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmt b/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmt
 new file mode 100644
-index 0000000..0994b6d
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmt differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmti
 new file mode 100644
-index 0000000..26fb92e
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batReturn-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batReturn.ast b/node_modules/bs-batteries/lib/bs/src/batReturn.ast
 new file mode 100644
-index 0000000..c5f39d3
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batReturn.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batReturn.d b/node_modules/bs-batteries/lib/bs/src/batReturn.d
 new file mode 100644
 index 0000000..41585da
@@ -1268,20 +1156,16 @@ index 0000000..41585da
 +src/batReturn-Batteries.cmi : Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batReturn.iast b/node_modules/bs-batteries/lib/bs/src/batReturn.iast
 new file mode 100644
-index 0000000..20185e4
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batReturn.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batSet-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batSet-Batteries.cmi
 new file mode 100644
-index 0000000..c7a969a
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batSet-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batSet-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batSet-Batteries.cmti
 new file mode 100644
-index 0000000..feec4fc
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batSet-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batSet.ast b/node_modules/bs-batteries/lib/bs/src/batSet.ast
 new file mode 100644
-index 0000000..3f0ba8f
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batSet.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batSet.d b/node_modules/bs-batteries/lib/bs/src/batSet.d
 new file mode 100644
 index 0000000..9947c73
@@ -1292,20 +1176,16 @@ index 0000000..9947c73
 +src/batSet-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInnerIO-Batteries.cmi src/batInterfaces-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batSet.iast b/node_modules/bs-batteries/lib/bs/src/batSet.iast
 new file mode 100644
-index 0000000..9130598
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batSet.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batString-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batString-Batteries.cmi
 new file mode 100644
-index 0000000..8d97b9e
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batString-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batString-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batString-Batteries.cmti
 new file mode 100644
-index 0000000..d9e13fe
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batString-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batString.ast b/node_modules/bs-batteries/lib/bs/src/batString.ast
 new file mode 100644
-index 0000000..78247d7
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batString.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batString.d b/node_modules/bs-batteries/lib/bs/src/batString.d
 new file mode 100644
 index 0000000..6a14b6d
@@ -1316,28 +1196,22 @@ index 0000000..6a14b6d
 +src/batString-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batInnerIO-Batteries.cmi src/batInterfaces-Batteries.cmi src/batOrd-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batString.iast b/node_modules/bs-batteries/lib/bs/src/batString.iast
 new file mode 100644
-index 0000000..7272e04
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batString.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmi
 new file mode 100644
-index 0000000..76dd6f8
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmj b/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmj
 new file mode 100644
-index 0000000..80c5d16
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmj differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmt b/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmt
 new file mode 100644
-index 0000000..4efaefa
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmt differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmti
 new file mode 100644
-index 0000000..251133f
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUChar-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUChar.ast b/node_modules/bs-batteries/lib/bs/src/batUChar.ast
 new file mode 100644
-index 0000000..d8fea3c
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUChar.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUChar.d b/node_modules/bs-batteries/lib/bs/src/batUChar.d
 new file mode 100644
 index 0000000..942aa8c
@@ -1348,20 +1222,16 @@ index 0000000..942aa8c
 +src/batUChar-Batteries.cmi : Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUChar.iast b/node_modules/bs-batteries/lib/bs/src/batUChar.iast
 new file mode 100644
-index 0000000..314ec3e
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUChar.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUTF8-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/batUTF8-Batteries.cmi
 new file mode 100644
-index 0000000..7869e59
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUTF8-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUTF8-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/batUTF8-Batteries.cmti
 new file mode 100644
-index 0000000..eaf04d2
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUTF8-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUTF8.ast b/node_modules/bs-batteries/lib/bs/src/batUTF8.ast
 new file mode 100644
-index 0000000..4d64956
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUTF8.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUTF8.d b/node_modules/bs-batteries/lib/bs/src/batUTF8.d
 new file mode 100644
 index 0000000..e79480d
@@ -1372,20 +1242,16 @@ index 0000000..e79480d
 +src/batUTF8-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi src/batUChar-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/batUTF8.iast b/node_modules/bs-batteries/lib/bs/src/batUTF8.iast
 new file mode 100644
-index 0000000..cb93320
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/batUTF8.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/option-Batteries.cmi b/node_modules/bs-batteries/lib/bs/src/option-Batteries.cmi
 new file mode 100644
-index 0000000..48872d1
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/option-Batteries.cmi differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/option-Batteries.cmti b/node_modules/bs-batteries/lib/bs/src/option-Batteries.cmti
 new file mode 100644
-index 0000000..2187f64
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/option-Batteries.cmti differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/option.ast b/node_modules/bs-batteries/lib/bs/src/option.ast
 new file mode 100644
-index 0000000..75ef785
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/option.ast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/lib/bs/src/option.d b/node_modules/bs-batteries/lib/bs/src/option.d
 new file mode 100644
 index 0000000..0ee97fe
@@ -1396,8 +1262,7 @@ index 0000000..0ee97fe
 +src/option-Batteries.cmi : Batteries.cmi src/batEnum-Batteries.cmi
 diff --git a/node_modules/bs-batteries/lib/bs/src/option.iast b/node_modules/bs-batteries/lib/bs/src/option.iast
 new file mode 100644
-index 0000000..3e1f2a3
-Binary files /dev/null and b/node_modules/bs-batteries/lib/bs/src/option.iast differ
+index 0000000..e69de29
 diff --git a/node_modules/bs-batteries/src/batConcurrent.bs.js b/node_modules/bs-batteries/src/batConcurrent.bs.js
 new file mode 100644
 index 0000000..a73da7e

@@ -124,11 +124,11 @@ let eq: (~eq: ('a, 'a) => bool=?, option('a), option('a)) => bool;
 
 /** [enum (Some x)] returns the singleton [x], while [enum None] returns
     the empty enumeration. */
-let enum: option('a) => Batteries.BatEnum.t('a);
+let enum: option('a) => BatEnum.t('a);
 
 /** [of_enum e] consumes the first element of [e], if it exists, and
     returns [Some e]. If [e] is empty, return [None]. */
-let of_enum: Batteries.BatEnum.t('a) => option('a);
+let of_enum: BatEnum.t('a) => option('a);
 
 /** {6 The Option Monad} */;
 

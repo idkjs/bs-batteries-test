@@ -1,24 +1,23 @@
-# Basic Reason Template
+# Bs-Batteries Test Repo
 
-Hello! This project allows you to quickly get started with ReScript using Reason syntax. If you wanted a more sophisticated version, try the `react` template (`bsb -theme react -init .`).
+Im trying to use https://github.com/meafmira/bs-batteries but cant seem to get the compiler to see the dependency.
 
-# Build
-
-```bash
-# for yarn
-yarn build
-
-# for npm
-npm run build
 ```
 
-# Build + Watch
+# Error
 
-```bash
-# for yarn
-yarn start
+```sh
+ We've found a bug for you!
+  /Volumes/SSD/Github/bs-batteries-test/src/Demo.re:2:6-14
 
-# for npm
-npm run start
+  1 │ Js.log("Hello, ReScript!");
+  2 │ open Batteries;
+  3 │ // module Option = Batteries.Option;
+  4 │ let odd = (x) =>{
+
+  The module or file Batteries can't be found.
 ```
 
+This is the test repo https://github.com/idkjs/bs-batteries-test
+
+I have bs-batteries in bsconfig.json. I tried patching bs-batteries bsconfig.json adding both `namespace:true` or `namespace:"Batteries"` and neither worked. Any idea why I cant access the lib? Thanks.

@@ -1,6 +1,6 @@
 Js.log("Hello, ReScript!");
-open Batteries;
-// module Option = Batteries.Option;
+// open Batteries;
+module Option = BatOption;
 let odd = (x) =>{
   switch (x mod 2){
   | 0 => Some(x)

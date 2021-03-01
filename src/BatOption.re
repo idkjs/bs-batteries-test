@@ -168,14 +168,14 @@ let eq = (~eq=(==), x, y) =>
   */
 let enum =
   fun
-  | None => Batteries.BatEnum.from(() => raise(Batteries.BatEnum.No_more_elements))
-  | Some(e) => Batteries.BatEnum.singleton(e);
+  | None => BatEnum.from(() => raise(BatEnum.No_more_elements))
+  | Some(e) => BatEnum.singleton(e);
 
 /*$T enum
      BatList.of_enum (enum None) = []
      BatList.of_enum (enum (Some 3)) = [3]
   */
-let of_enum = Batteries.BatEnum.get;
+let of_enum = BatEnum.get;
 
 /*$T of_enum
      of_enum (BatList.enum []) = None
